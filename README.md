@@ -54,23 +54,33 @@ _Note: All seed data is provided for you in the seed.js file, EXCEPT WHAT IS REQ
 _wizarding school_
 
 - [ ] Write a route to serve up a single wizarding school (based on its id), including that schools' students
-      _students_
+
+_students_
+
 - [ ] Write a route to serve up a single student (based on their id), including that student's wizarding school
 </details>
 
 <details>
 <summary>Tier 3: Adding a Wizarding School and Adding a Student (8/59):</summary>
-*wizarding school*
+
+_wizarding school_
+
 - [ ] Write a route to add a new wizarding school
-*student*
+
+_student_
+
 - [ ] Write a route to add a new student
 </details>
 
 <details>
 <summary>Tier 4: Removing a Wizarding School and Removing a Student (6/59):</summary>
-*wizarding school*
+
+_wizarding school_
+
 - [ ] Write a route to remove a wizarding school (based on its id)
-*student*
+
+_student_
+
 - [ ] Write a route to remove a student (based on their id)
 </details>
 
@@ -80,7 +90,9 @@ _wizarding school_
 _wizarding school_
 
 - [ ] Write a route to update an existing wizarding school
-      _student_
+
+_student_
+
 - [ ] Write a route to update an existing student
 </details>
 
@@ -94,11 +106,15 @@ _wizarding school_
 - [ ] Write a component to display a list of all wizarding schools (at least their names and images)
 - [ ] Write a context to manage wizarding schools in your application state
 - [ ] Display the all-wizarding schools component when the url matches `/wizarding-schools`
-      _students_
+
+_students_
+
 - [ ] Write a component to display a list of all students (at least their names)
 - [ ] Write a context to manage students in your application state
 - [ ] Display the all-students component when the url matches `/students`
-      _navbar_
+
+_navbar_
+
 - [ ] Add a links to the navbar that can be used to navigate to the all-wizarding schools view and the all-students view
 </details>
 
@@ -106,6 +122,7 @@ _wizarding school_
 <summary>Tier 2: Single Student and Single Wizarding School (10/59):</summary>
 
 _single wizarding school_
+
 **Write a component to display a single wizarding school with the following information:**
 
 - [ ] The wizarding school's name, image, location and description
@@ -115,6 +132,7 @@ _single wizarding school_
 - [ ] Clicking on the name of a student in the wizarding school view should navigate to show that student in the student view
 
 _single student_
+
 **Write a component to display a single student with the following information:**
 
 - [ ] The student's full name, email, image, and magicalAbilityScore
@@ -176,7 +194,8 @@ _Submitting the form with valid data should:_
 - [ ] Update the wizarding school in the current view without needing to refresh the page
 
 - [ ] In the wizarding school view, display an Unenroll button next to each of its students, which removes the student from the wizarding school (in the database as well as this view)
-      _hint: the student is still in the database but is no longer associated with the wizarding school_
+
+_hint: the student is still in the database but is no longer associated with the wizarding school_
 
 **student**
 
