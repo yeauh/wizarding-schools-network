@@ -25,6 +25,7 @@ _Note: All seed data is provided for you in the seed.js file, EXCEPT WHAT IS REQ
 
 <details>
 <summary>Tier 1: All Wizarding Schools and Students (26/59):</summary>
+
 ### _wizarding school_
 
 - [ ] Write a route to serve up all wizarding schools
@@ -37,7 +38,9 @@ _Note: All seed data is provided for you in the seed.js file, EXCEPT WHAT IS REQ
 ### _students_
 
 - [ ] Write a route to serve up all students
-      **Write a `students` model with the following information:**
+
+###### **Write a `students` model with the following information:**
+
 - [ ] firstName - not empty or null
 - [ ] lastName - not empty or null
 - [ ] email - not empty or null; must be a valid email
@@ -51,11 +54,11 @@ _Note: All seed data is provided for you in the seed.js file, EXCEPT WHAT IS REQ
 <details>
 <summary>Tier 2: Single Student and Single Wizarding School (10/59):</summary>
 
-_wizarding school_
+### _wizarding school_
 
 - [ ] Write a route to serve up a single wizarding school (based on its id), including that schools' students
 
-_students_
+### _students_
 
 - [ ] Write a route to serve up a single student (based on their id), including that student's wizarding school
 </details>
@@ -63,11 +66,11 @@ _students_
 <details>
 <summary>Tier 3: Adding a Wizarding School and Adding a Student (8/59):</summary>
 
-_wizarding school_
+### _wizarding school_
 
 - [ ] Write a route to add a new wizarding school
 
-_student_
+### _student_
 
 - [ ] Write a route to add a new student
 </details>
@@ -75,11 +78,11 @@ _student_
 <details>
 <summary>Tier 4: Removing a Wizarding School and Removing a Student (6/59):</summary>
 
-_wizarding school_
+### _wizarding school_
 
 - [ ] Write a route to remove a wizarding school (based on its id)
 
-_student_
+### _student_
 
 - [ ] Write a route to remove a student (based on their id)
 </details>
@@ -87,11 +90,11 @@ _student_
 <details>
 <summary>Tier 5: Updating a Wizarding School and Updating a Student (9/59):</summary>
 
-_wizarding school_
+### _wizarding school_
 
 - [ ] Write a route to update an existing wizarding school
 
-_student_
+### _student_
 
 - [ ] Write a route to update an existing student
 </details>
@@ -101,19 +104,19 @@ _student_
 <details>
 <summary>Tier 1: All Wizarding Schools and Students (26/59):</summary>
 
-_wizarding school_
+### _wizarding school_
 
 - [ ] Write a component to display a list of all wizarding schools (at least their names and images)
 - [ ] Write a context to manage wizarding schools in your application state
 - [ ] Display the all-wizarding schools component when the url matches `/wizarding-schools`
 
-_students_
+### _student_
 
 - [ ] Write a component to display a list of all students (at least their names)
 - [ ] Write a context to manage students in your application state
 - [ ] Display the all-students component when the url matches `/students`
 
-_navbar_
+### _navbar_
 
 - [ ] Add a links to the navbar that can be used to navigate to the all-wizarding schools view and the all-students view
 </details>
@@ -121,9 +124,9 @@ _navbar_
 <details>
 <summary>Tier 2: Single Student and Single Wizarding School (10/59):</summary>
 
-_single wizarding school_
+### _single wizarding school_
 
-**Write a component to display a single wizarding school with the following information:**
+###### **Write a component to display a single wizarding school with the following information:**
 
 - [ ] The wizarding school's name, image, location and description
 - [ ] A list of the names of all students in that wizarding school (or a helpful message if it doesn't have any students)
@@ -131,9 +134,9 @@ _single wizarding school_
 - [ ] Clicking on a wizarding school from the wizarding schools view should navigate to show that wizarding school
 - [ ] Clicking on the name of a student in the wizarding school view should navigate to show that student in the student view
 
-_single student_
+### _single student_
 
-**Write a component to display a single student with the following information:**
+###### **Write a component to display a single student with the following information:**
 
 - [ ] The student's full name, email, image, and magicalAbilityScore
 - [ ] The name of their wizarding school (or a helpful message if they don't have one)
@@ -145,19 +148,23 @@ _single student_
 <details>
 <summary>Tier 3: Adding a Wizarding School and Adding a Student (8/59):</summary>
 
-_wizarding school_
+### _wizarding school_
 
 - [ ] Write a component to display a form for adding a new wizarding school that contains inputs for at least the name and location.
 - [ ] Display this component as part of the wizarding schools view, alongside the list of wizarding schools
-      **Submitting the form with a valid name/location should:**
+
+##### **Submitting the form with a valid name/location should:**
+
 - [ ] Make an Axios request that causes the new wizarding school to be persisted in the database
 - [ ] Add the new wizarding school to the list of wizarding schools without needing to refresh the page
 
-_student_
+### _student_
 
 - [ ] Write a component to display a form for adding a new student that contains inputs for at least first name, last name and email
 - [ ] Display this component as part of the students view, alongside the list of students
-      **Submitting the form with a valid first name/last name/email should:**
+
+###### **Submitting the form with a valid first name/last name/email should:**
+
 - [ ] Make an Axios request that causes the new student to be persisted in the database
 - [ ] Add the new student to the list of students without needing to refresh the page
 </details>
@@ -165,14 +172,14 @@ _student_
 <details>
 <summary>Tier 4: Removing a Wizarding School and Removing a Student (6/59):</summary>
 
-_wizarding school_
+### _wizarding school_
 
 - [ ] In the wizarding schools view, include an X button next to each wizarding school
       **Clicking the X button should:**
 - [ ] Make an Axios request that causes that wizarding school to be removed from database
 - [ ] Remove the wizarding school from the list of wizarding schools without needing to refresh the page
 
-_student_
+### _student_
 
 - [ ] In the students view, include an X button next to each student
       **Clicking the X button should:**
@@ -183,7 +190,7 @@ _student_
 <details>
 <summary>Tier 5: Updating a Wizarding School and Updating a Student (9/59):</summary>
 
-**wizarding school**
+### **wizarding school**
 
 - [ ] Write a component to display a form updating at least a wizarding school's name and location
 - [ ] Display this component as part of the wizarding school view
@@ -197,12 +204,12 @@ _Submitting the form with valid data should:_
 
 _hint: the student is still in the database but is no longer associated with the wizarding school_
 
-**student**
+### **student**
 
 - [ ] Write a component to display a form updating a student
 - [ ] Display this component as part of the student view
 
-_Submitting the form with valid data should:_
+###### _Submitting the form with valid data should:_
 
 - [ ] Make an Axios request that causes that student to be updated in the database
 - [ ] Update the student in the current view without needing to refresh the page
