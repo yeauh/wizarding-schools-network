@@ -28,12 +28,12 @@ _Note: All seed data is provided for you in the seed.js file, EXCEPT WHAT IS REQ
 
 ### _wizarding school_
 
-- [ ] Write a route to serve up all wizarding schools
+- [✅] Write a route to serve up all wizarding schools
       **Write a `wizarding schools` model with the following information:**
-- [ ] name - not empty or null
-- [ ] imageUrl - with a default value
-- [ ] location - not empty or null
-- [ ] description - extremely large text
+- [✅] name - not empty or null
+- [✅] imageUrl - with a default value
+- [✅] location - not empty or null
+- [✅] description - extremely large text
 
 ### _students_
 
@@ -41,14 +41,14 @@ _Note: All seed data is provided for you in the seed.js file, EXCEPT WHAT IS REQ
 
 ###### **Write a `students` model with the following information:**
 
-- [ ] firstName - not empty or null
-- [ ] lastName - not empty or null
-- [ ] email - not empty or null; must be a valid email
+- [✅] firstName - not empty or null
+- [✅] lastName - not empty or null
+- [✅] email - not empty or null; must be a valid email
 - [ ] imageUrl - with a default value
-- [ ] magicalAbilityScore - decimal between 0.0 and 10.0
+- [✅] magicalAbilityScore - decimal between 0.0 and 10.0
 
-- [ ] Students may be associated with at most one wizarding school.
-- [ ] Likewise, wizarding schools may be associated with many students
+- [✅] Students may be associated with at most one wizarding school.
+- [✅] Likewise, wizarding schools may be associated with many students
 </details>
 
 <details>
