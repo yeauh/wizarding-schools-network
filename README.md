@@ -28,12 +28,12 @@ _Note: All seed data is provided for you in the seed.js file, EXCEPT WHAT IS REQ
 
 ### _wizarding school_
 
-- [✅] Write a route to serve up all wizarding schools
+- [x] Write a route to serve up all wizarding schools
       **Write a `wizarding schools` model with the following information:**
-- [✅] name - not empty or null
-- [✅] imageUrl - with a default value
-- [✅] location - not empty or null
-- [✅] description - extremely large text
+- [x] name - not empty or null
+- [ ] imageUrl - with a default value
+- [x] location - not empty or null
+- [x] description - extremely large text
 
 ### _students_
 
