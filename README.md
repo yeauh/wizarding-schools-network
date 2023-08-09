@@ -41,14 +41,14 @@ _Note: All seed data is provided for you in the seed.js file, EXCEPT WHAT IS REQ
 
 ###### **Write a `students` model with the following information:**
 
-- [✅] firstName - not empty or null
-- [✅] lastName - not empty or null
-- [✅] email - not empty or null; must be a valid email
+- [x] firstName - not empty or null
+- [x] lastName - not empty or null
+- [x] email - not empty or null; must be a valid email
 - [ ] imageUrl - with a default value
-- [✅] magicalAbilityScore - decimal between 0.0 and 10.0
+- [x] magicalAbilityScore - decimal between 0.0 and 10.0
 
-- [✅] Students may be associated with at most one wizarding school.
-- [✅] Likewise, wizarding schools may be associated with many students
+- [x] Students may be associated with at most one wizarding school.
+- [x] Likewise, wizarding schools may be associated with many students
 </details>
 
 <details>
