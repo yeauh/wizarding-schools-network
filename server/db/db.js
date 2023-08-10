@@ -10,9 +10,10 @@ const pkg = require("../../package.json");
 console.log(chalk.yellow("Opening database connection"));
 
 // create the database instance that can be used in other database files
-const db = new Sequelize(`postgres://localhost:5432/${pkg.name}`, {
-  logging: false, // so we don't see all the SQL queries getting made
-});
+// const db = new Sequelize(`postgres://localhost:5432/${pkg.name}`, {
+//   logging: false, // so we don't see all the SQL queries getting made
+// });
+const db = new Sequelize("postgres://localhost/wizarding-schools-network");
  /*
   wizarding-shools model:
   name - not empty or null
@@ -30,7 +31,7 @@ const wizardingSchools = db.define("wizardingSchools", {
     type: Sequelize.STRING,
     defaultValue: "google.com",
   },
-  location: {
+  address: {
     type: Sequelize.STRING,
     allowNull: false,
   },
@@ -59,7 +60,7 @@ const student = db.define("student", {
     allowNull: false,
   },
   email: {
-    type: DataTypes.STRING,
+    type: Sequelize.STRING,
     allowNull: false,
     unique: true,
     validate: {

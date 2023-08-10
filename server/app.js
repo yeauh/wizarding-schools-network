@@ -14,4 +14,13 @@ app.use("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
+const allScools = (campuses) => `
+  <h1>All schools</h1>
+  <main>
+    ${campuses.map((campus) => {
+      return `<section><a id="${campus.name}"></section>`
+    })}
+  </main>
+`;
+
 module.exports = app;
