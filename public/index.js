@@ -1,0 +1,1 @@
+const fname = document.getElementsByName('First-name');

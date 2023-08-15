@@ -3,6 +3,8 @@ const path = require("path");
 const cors = require("cors");
 const volleyball = require("volleyball");
 const app = express();
+module.exports = app;
+
 
 // static middleware
 app.use(express.static(path.join(__dirname, "..", "public")));
@@ -14,13 +16,15 @@ app.use("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
-const allScools = (campuses) => `
-  <h1>All schools</h1>
-  <main>
-    ${campuses.map((campus) => {
-      return `<section><a id="${campus.name}"></section>`
-    })}
-  </main>
-`;
+app.use('/api'), require('/api');
 
-module.exports = app;
+app.use((req, res, next) => {
+  if (path.extname(req.path).length > 0) {
+    res.status(400).end();
+  } else {
+    next();
+  }
+});
+
+
+

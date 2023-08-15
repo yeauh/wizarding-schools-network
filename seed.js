@@ -1,4 +1,4 @@
-const { db } = require("./server/db");
+const { db, student, wizardingSchools } = require("./server/db");
 const { green, red } = require("chalk");
 
 // require your models here
@@ -148,13 +148,13 @@ const seed = async () => {
 
     await Promise.all(
       campuses.map((campus) => {
-        return Campuses.create(campus);
+        return wizardingSchools.create(campus);
       })
     );
 
     await Promise.all(
-      students.map((student) => {
-        return Students.create(student);
+      students.map((studs) => {
+        return student.create(studs);
       })
     );
 
